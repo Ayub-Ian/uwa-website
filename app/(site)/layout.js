@@ -2,6 +2,7 @@ import "../globals.css";
 import { Montserrat } from "next/font/google";
 import Image from "next/image";
 import Footer from "../components/footer";
+import Link from "next/link";
 
 const montserrat = Montserrat({ subsets: ["latin"], display: "swap" });
 
@@ -13,21 +14,24 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className="tw-dark">
+    <html lang="en" >
       <head>
         <link rel="icon" href="/favicon.ico" />
       </head>
-      <body className={`${montserrat.className} tw-py-2.5`}>
+      <body className={`${montserrat.className} tw-py-2.5`} suppressHydrationWarning={true}>
         <header className="tw-py-1">
           <div className="tw-px-4">
             <div className="tw-flex tw-items-center">
+              <Link href="/">
               <Image
                 src="/logo.png"
                 alt="Ushauri Wellness Africa logo"
                 width={61}
                 height={42}
+                className="tw-h-auto tw-w-auto"
               />
-              <h1 className="tw-text-[#B12D68] tw-font-extrabold tw-text-xl tw-hidden md:tw-block ">
+              </Link>
+              <h1 className="tw-text-[#B12D68] tw-font-extrabold  md:tw-text-xl  ">
                 Ushauri Wellness Africa
               </h1>
             </div>
