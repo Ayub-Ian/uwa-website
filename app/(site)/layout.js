@@ -33,11 +33,10 @@ export default function RootLayout({ children }) {
             </div>
           </div>
         </header>
-        <main className="tw-px-2.5 tw-min-h-screen tw-flex tw-flex-col ">{children}
-        <Footer />
+        <main className="tw-px-2.5 tw-min-h-screen tw-flex tw-flex-col">
+          {children}
+          <Footer />
         </main>
-
-        
       </body>
     </html>
   );

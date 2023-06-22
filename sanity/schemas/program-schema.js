@@ -20,10 +20,14 @@ const program = {
           type: "url"
         },
         {
-          name: "content",
-          title: "Content",
-          type: "array",
-          of: [{ type: "block" }]
+          name: "description",
+          title: "Description",
+          type: "string"
+        },
+        {
+          name: "hexcode",
+          title: "Hexcode",
+          type: "string"
         }
       ]
 }

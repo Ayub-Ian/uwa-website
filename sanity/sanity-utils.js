@@ -10,7 +10,8 @@ export async function getPrograms() {
       name,
       "slug": slug.current,
       url,
-      content
+      description,
+      hexcode
     }`
   )
 }

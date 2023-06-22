@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function Footer() {
   return (
     <div className="tw-mt-auto">
-      <footer className="tw-bg-white tw-rounded-md">
+      <footer className="tw-bg-white tw-rounded-md tw-mt-2.5">
         <div className="tw-mx-auto tw-w-full tw-max-w-screen-xl tw-p-4 tw-py-6 lg:tw-py-8">
           <div className="md:tw-flex md:tw-justify-between">
             <div className="tw-mb-6 md:tw-mb-0">
